@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100;1,200&family=Oswald&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+  /* Navbar CSS starts here */
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+nav img{
+    cursor: pointer;
+}
+nav span{
+    font-size: 3rem;
+    margin-left: 8px;
+}
+.small-screen{
+    display: none;
+}
+.large-screen{
+    display: block;
+}
+nav a{
+    margin: 5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+nav a:hover{
+    color: #f0780e;
+    font-weight: bold;
+}
+.navigation-links{
+    margin-top: 1rem;
+}
+nav button{
+    padding: 11px 24px;
+    margin-top: 1rem;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+.user-profile{
+    display: none;
+}
+
+/* Navbar media query */ 
+ @media screen and (max-width:1280px){
+    nav span{
+        font-size: 2rem;
+        margin-left: 6px;
+    }
+    nav a{
+        margin: 3rem;
+    } 
+}
+@media screen and (max-width:960px){
+    nav a{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .large-screen{
+        display: none;
+    }
+    .small-screen{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        margin-left: 3%;
+    }
+    .user-profile{
+        display: block;
+        margin-top: 10px;
+        margin-right: 3%;
+    }
+    nav{
+        justify-content: space-between;
+    }
+}
+    /* Navbar CSS ends here */
+
+    /* Hero section CSS starts here */
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+}
+.left-section{
+    margin-top: 3%;
+    margin-left: -5%;
+}
+.heading h1{
+    font-size: 5rem;
+}
+.heading img{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+.left-section p{
+    font-size: 1.5rem;
+    margin-left: 2%;
+    padding-left: 2%;
+    border-left: 1px solid black;
+}
+.btns{
+    margin-left: 2%;
+    padding-left: 2%;
+    margin-top: 2rem;
+}
+.btn-1{
+    padding: 12px 26px;
+    background-color: #f0752d;
+    border: #f0752d;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem;
+}
+.btn-2{
+    padding: 12px 26px;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 1rem;
+}
+.curve-arrow{
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+}
+.right-section{
+    margin-top: 4%;
+    margin-left: -3%;
+    width: 30%;
+}
+.hero-image{
+    height: 27rem;
+    width: 18rem;
+    position: relative;
+    left: 18%;
+}
+.hero-image-bg{
+    background-image: url(main-image-bg.png);
+    background-repeat: no-repeat;
+}
+.circle{
+    position: absolute;
+    right: 8%;
+    bottom: 25%;
+}
+.green-arrow{
+    position: absolute;    
+}
+.main-image-pattern{
+    position: absolute;
+    bottom: 20%;
+}
+ /* media query for hero section */
+@media screen and (max-width:415px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .heading h1{
+        font-size: 2rem;
+        margin-left: 7%;
+    }
+    .left-section p{
+        font-size: 1rem;
+        margin-top: 5%;
+        margin-left: 7%;
+        padding-left: 2%;
+    }
+    .heading img{
+        left: 6%;
+        top: 36%;
+    }
+    .right-section{
+        margin-top: 20%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .hero-image{
+        height: 27rem;
+        width: 17rem;
+        position: relative;
+        left: 14%;
+    }
+    .hero-image-bg{
+        background-size: 25rem 30rem;
+    }
+    .main-image-pattern{
+        height: 30rem;
+        width: 25rem;
+        bottom: 13%;
+        top: 40%;
+    }
+    .curve-arrow{
+        left: 50%;
+        bottom: -20%;
+    }
+    .circle{
+        right: 2%;
+        bottom: 6%;
+    }
+    .btns{
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+}
+
+/* hero section CSS ends here */
+
+/* footer section CSS starts here */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #190442;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+footer h1,h2{
+    color: #fff;
+}
+footer h2{
+    margin-top: 1rem;
+}
+footer p{
+    color: antiquewhite;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+footer img{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.box-2 img{
+    background-color: #78e43a;
+}
+.box-3 img{
+    background-color: #ff8000;
+}
+.box-4 img{
+    background-color: #250ac2;
+}
+@media screen and (max-width:415px){
+    footer{
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+    footer img{
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    footer h1,h2,p{
+        text-align: center;
+    }
+}
+/* footer section CSS ends here */

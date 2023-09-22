@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS Assignment</title>
+    <style>
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to bottom, #74aefa,#0b0b90);
+        }
+        h1{
+            font-size: 70px;
+            color: #fff;
+            margin-bottom: 0px;
+        }
+        p{
+            color: #fff;
+            font-size: 25px;
+            margin-left: 140px;
+            margin-top: 5px; 
+        }
+        .container2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 20vh;
+            width: 100%;
+            margin-top: 10px;
+            background-image: linear-gradient(to right,pink,purple);
+        }
+        .container2 h2{
+            font-size: 40px;
+            margin: 0px;
+            margin-left: 40px;
+            color: #fff;
+        }
+        .container2 p{
+            font-size: 25px;
+            margin: 0px;
+        }
+        .sticky-note{
+            width: 30rem;
+            height: 30rem;
+            margin-left: 35%;
+            margin-top: 10px;
+            padding-top: 30px;
+            padding-left: 20px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, #74aefa,#0b0b90);
+            border-radius:10px;
+            transition:all 0.8s ease-in-out;
+        }
+        .num{
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+        }
+        .date{
+            font-size: 22px;
+            margin-left: 10rem;
+            color: #fff;
+        }
+        .sticky-note h2{
+            margin-top: 5rem;
+            margin-left: 2rem;
+            font-size: 40px;
+        }
+        li{
+            margin-left: 3rem;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button{
+            width: 80%;
+            height: 8%;
+            margin-left: 2rem;
+            margin-top: 4rem;
+            color: black;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #35eaf1,#2bb40d);
+            border-radius:10px;
+        }
+        .sticky-note:hover{
+            transform: rotate(-45deg);
+        }
+        img{
+            height: 250px;
+            width: 250px;
+        }
+        .image1{
+            height: 250px;
+            width: 250px;
+            margin-left: 250px;
+            margin-top: 20px;
+            transition: all 0.9s ease-in-out;
+        }
+        .image2{
+            height: 250px;
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 250px;
+            transition: all 0.9s ease-in-out;
+            filter: blur(10px);
+        }
+        .image1:hover{
+            transform: scale(2);
+        }
+        .image2:hover{
+            filter: none;
+            transform: scale(2);
+        }
+        .btn{
+            width: 20%;
+            height: 3rem;
+            position: relative;
+            animation: move 0.8s ease-in-out 0s infinite alternate;
+        }
+        @keyframes move {
+            0%,100%{
+                transform: translateY(-25%);
+            }
+            50%{
+                transform: translateY(0%);
+            }
+            /* from{
+                bottom: 0px;
+            }
+            to{
+                bottom: 30px;
+            } */
+        }
+        .loading-circle{
+            height: 100px;
+            width: 100px;
+            border: 7px solid #f0eadf;
+            border-top: 7px solid #1c1b1b;
+            border-radius: 50%;
+            margin: auto;
+            animation: loading 2s linear 0s infinite;
+        }
+        .loading{
+            position: relative;
+            top: 10px;
+            left: 39rem;
+            width: 50vw;
+        }
+        @keyframes loading {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        :root{
+            --b:block;
+            --mar-left:10px;
+            --mar-top:50px;
+            --color-grey:#b9b4b4;
+        }
+        .apple-inc{
+            height: 70vh;
+            width: 40vw;
+            border: 2px solid black;
+            background-color: #2d2b2b;
+            border-radius: 20px;
+            margin-left: 30em;
+        }
+        .apple-inc img{
+            height: 200px;
+            width: 200px;
+            display: var(--b);
+            margin: auto;
+        }
+        .apple-inc h1{
+            text-align: center;
+            font-size: 48px;
+        }
+        .apple-inc p{
+            margin-left: var(--mar-left);
+            margin-top: var(--mar-top);
+            color: #6c6c6e;
+        }
+        .apple-para{
+            max-height: 200px;
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar{
+            width: 2px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--color-grey);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box">
+            <h1>Welcome To Our Website</h1>
+            <p>Enjoy the stunning blue gradient background</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div><h2>15+</h2><p>Years Experience</p></div>
+        <div><h2>24.5T+</h2><p>Invested on Coinyx</p></div>
+        <div><h2>115+</h2><p>Professional Team</p></div>
+        <div><h2>262+</h2><p>Total Global Node</p></div>
+    </div>
+    <div class="sticky-note">
+        <span class="num">#01</span>
+        <span class="date">Created on : 01/01/2023</span>
+        <h2>Important Dates</h2>
+        <ul>
+            <li>January 26 - Republic Day</li>
+            <li>August 15 - Independence Day</li>
+            <li>August 29 - National Sports Day</li>
+            <li>October 2 - Gandhi Jayanti</li>
+        </ul>
+        <button>Mark As Done</button>
+    </div>
+    <div class="image1">
+        <img src="https://images.pexels.com/photos/17583913/pexels-photo-17583913/free-photo-of-nevado-callangate-cusco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </div>
+    <h1 style="color: black; font-size: 30px;">Hover to See the image</h1>
+    <div class="image2">
+        <img src="https://images.pexels.com/photos/17346212/pexels-photo-17346212/free-photo-of-while-admiring-architecture.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="">
+    </div>
+    <button class="btn"><a href="http://pwskills.com" target="_blank" rel="noopener noreferrer">Click me to visit PW Skills</a></button>
+    <div class="loading-circle">
+    </div>
+    <p class="loading" style="color: black;">Loading...</p>
+    <div class="apple-inc">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/170px-Apple_Computer_Logo_rainbow.svg.png" alt="">
+        <h1>Apple Inc</h1>
+        <div class="apple-para">
+            <p>
+                Apple Inc., founded on April 1,1976,by Steve Jobs, Steve Wozniak, and Ronald Wayne, is a multinational technology company headquartered in Cupertino, California.<br><br>
+                Apple is renowned for its innovative consumer electronics, software, and online services , including the iPhone , iPad,Mac , Apple Watch , and Apple TV.<br><br>
+                The compnay's success can be attributes to its commitment to sleek design , intuitive user interfaces, and seamless integration between hardware and software.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

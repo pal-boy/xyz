@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100;1,200&family=Oswald&family=Poppins:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header-section{
+            display: flex;
+            border: 3px solid whitesmoke;
+            box-shadow: 2px 2px 3px #d5d3d3;
+            position: fixed;
+            top: 0;
+            background-color: #fff;
+            width: 100%;
+        }
+        .gmail-logo{
+            height: 32px;
+            width: 32px;
+            margin: 18px 15px 18px 50px;
+        }
+        .gmail-logo:hover{
+            cursor: pointer;
+        }
+        span{
+            font-size: 24px;
+            margin-top: 18px;
+            color: #8a8787;
+        }
+        span:hover{
+            cursor: pointer;
+        }
+        .header-right-part{
+            display: flex;
+            justify-content: flex-end;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 950px;
+            margin-right: 50px;
+            width: 100%;
+        }
+        .button1{
+            color: #3636f4;
+            font-size: 15px;
+            background-color: #fff;
+            padding: 12px;
+            font-weight: bold;
+        }
+        .button1:hover{
+            background-color: #e4eff5;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button2{
+            color: #3636f4;
+            font-size: 15px;
+            border: 1px solid #c8c7c7;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .button2:hover{
+            background-color: #ecedee;
+            cursor: pointer;
+        }
+        .button3{
+            background-color: #5c71fa;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .button3:hover{
+            background-color: #1260af;
+            cursor: pointer;
+        }
+        .gmail-image{
+            height: 650px;
+            width: 970px;
+            margin-left: 80px;
+        }
+        .main{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .para1{
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 50px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .para2{
+            font-size: 18px;
+            color: #8a8787;
+            margin-left: 100px;
+        }
+        .buttons{
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        .account-button{
+            text-decoration: none;
+            background-color: #5c71fa;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .account-button:hover{
+            background-color: #1260af;
+            cursor: pointer;
+        }
+        .work-button{
+            margin-top: 40px;
+            text-decoration: none;
+            color: #3636f4;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 12px;
+        }
+        .work-button:hover{
+            background-color: #e4eff5;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-section">
+            <img class="gmail-logo" src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="Gmail logo"><span>Gmail</span>
+            <div class="header-right-part">
+                <p class="button1">For work</p>
+                <p class="button2">Sign in</p>
+                <p class="button3">Create an account</p>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div>
+            <p class="para1">
+                Secure, smart,<br>and easy to use<br>email
+            </p>
+            <p class="para2">
+                Get more done with Gmail. Now integrated with Google<br>chat, Google Meet, and more, all in one place.
+            </p>
+            <div class="buttons">
+                <a class="account-button" href="#">Create an account</a>
+                <a class="work-button" href="#">For work</a>
+            </div>
+        </div>
+        <div>
+            <img class="gmail-image" src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="Gmal landing image">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        .time-table{
+            display: grid;
+            grid-template-columns: repeat(8,200px);
+            grid-template-rows: repeat(7,70px);
+            padding: 10px;
+            border: 2px solid black;
+            background-color: #2944e0;
+        }
+        .time-table div{
+            border: 2px dotted black;
+            text-align: center;
+            padding: 20px 5px;
+        }
+        .chemistry-lab{
+            grid-column: 7/9;
+            background-color: silver;
+        }
+        .games{
+            grid-column: 7/9;
+            background-color: #13be13;
+        }
+        .biology-lab{
+            grid-column: 2/4;
+            background-color: silver;
+        }
+        .let-off{
+            grid-column: 7/9;
+            background-color: #13be13;
+        }
+        .heading{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .time{
+            background-color: orangered;
+        }
+        .days{
+            background-color: purple;
+        }
+        .sky-blue{
+            background-color: skyblue;
+        }
+        .lunch{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Time Table</h1>
+    <div class="time-table">
+        <div class="heading time">TIME</div>
+        <div class="heading time">8:00-9:00 AM</div>
+        <div class="heading time">9:00-10:00 AM</div>
+        <div class="heading time">10:00-11:00 AM</div>
+        <div class="heading time">11:00-12:00 PM</div>
+        <div class="heading time">12:00-2:00 PM</div>
+        <div class="heading time">2:00-3:00 PM</div>
+        <div class="heading time">3:00-4:00 PM</div>
+
+        <div class="heading days">Monday</div>
+        <div class="sky-blue">English</div>
+        <div class="sky-blue">Biology</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">L</div>
+        <div class="chemistry-lab">Chemistry Lab</div>
+
+        <div class="heading days">Tuesday</div>
+        <div class="biology-lab">Biology Lab</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">U</div>
+        <div class="sky-blue">English</div>
+        <div class="sky-blue">Biology</div>
+
+        <div class="heading days">Wednesday</div>
+        <div class="sky-blue">English</div>
+        <div class="sky-blue">Biology</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">N</div>
+        <div class="games">Games</div>
+
+        <div class="heading days">Thursday</div>
+        <div class="biology-lab">Biology Lab</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">C</div>
+        <div class="sky-blue">English</div>
+        <div class="sky-blue">Biology</div>
+
+        <div class="heading days">Friday</div>
+        <div class="sky-blue">English</div>
+        <div class="sky-blue">Biology</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">H</div>
+        <div class="chemistry-lab">Physics Lab</div>
+
+        <div class="heading days">Saturday</div>
+        <div class="biology-lab">Biology Lab</div>
+        <div class="sky-blue">Physics</div>
+        <div class="sky-blue">Chemistry</div>
+        <div class="lunch">Break</div>
+        <div class="let-off">LET OFF</div>
+    </div>
+</body>
+</html>

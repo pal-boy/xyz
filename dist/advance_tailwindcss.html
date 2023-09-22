@@ -1,0 +1,261 @@
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Broker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="stock_market.css" />
+</head>
+
+<body>
+    <div class="bg-black mb-0 pb-5">
+        <nav class="flex justify-between pl-5 pr-5">
+            <div class="flex items-center">
+                <img class="h-16 w-16 rounded-full mt-2" src="/assests/logo.jpg" alt="" />
+                <span class="text-3xl text-white">LIQUID</span>
+            </div>
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars text-white text-3xl sm:hidden md:hidden lg:hidden"></i>
+                <button
+                    class="hidden sm:block md:mr-7 border-2 border-orange-500 bg-orange-500 text-white pl-16 pr-16 pt-3 pb-3 rounded-lg mt-2 mb-2">
+                    Create Account
+                </button>
+                <img class="hidden sm:block md:h-12 w-12 rounded-full" src="/assests/account_logo.webp" alt="" />
+            </div>
+        </nav>
+        <div class="flex flex-col justify-center sm:flex sm:flex-row sm:gap-7 sm:justify-around sm:items-center sm:mt-0">
+            <div>
+                <h1 class="text-7xl text-white text-center sm:text-left sm:ml-5 md:text-left md:ml-5">
+                    Multi-regulated<br />global broker.
+                </h1>
+                <p class="mt-6 ml-2 text-[20px] text-gray-500 text-center sm:text-left sm:ml-5 md:text-left md:ml-5">
+                    A trusted destination for traders worldwide,<br />authorised by FCA,
+                    ASIC & FSCA
+                </p>
+                <button class="border-2 mt-8 ml-10 text-white border-orange-600 py-3 px-10 rounded animate-bounce sm:ml-10 md:ml-12">
+                    Discover Accounts
+                </button>
+            </div>
+            <div>
+                <img class="ml-10" src="https://www.uniskytechnologies.com/img/in-liquid-slide-2.svg" alt="" />
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-col md:flex-col sm:justify-around md:justify-around lg:flex-row mt-8">
+            <div class="flex gap-5">
+                <img class="h-20 w-20" src="https://1000logos.net/wp-content/uploads/2021/05/Alphabet-logo.png"
+                    alt="" />
+                <button class="border-green-500 pt-1 pb-1 px-5 h-12 mt-2 font-bold rounded-lg bg-green-500">
+                    <span class="mt-2 text-2xl">&and;</span> 1,740.05
+                </button>
+            </div>
+            <div class="flex gap-5">
+                <img class="h-12 w-20 mt-3"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png"
+                    alt="" />
+                <button class="border-green-500 pt-1 pb-1 px-5 h-12 mt-2 font-bold rounded-lg bg-green-500">
+                    <span class="mt-2">&and;</span> 1,740.05
+                </button>
+            </div>
+            <div class="flex gap-5">
+                <img class="h-20 w-20" src="https://logohistory.net/wp-content/uploads/2022/10/Facebook-Logo.png"
+                    alt="" />
+                <button class="border-orange-500 pt-1 pb-1 px-5 h-12 mt-2 font-bold rounded-lg bg-orange-500">
+                    <span class="mb-4">&or;</span> 1,740.05
+                </button>
+            </div>
+            <div class="flex gap-5">
+                <img class="h-12 w-20 mt-3"
+                    src="https://www.shutterstock.com/image-vector/amazon-logo-editorial-icon-isolated-260nw-2313339121.jpg"
+                    alt="" />
+                <button class="border-green-500 pt-1 pb-1 px-5 h-12 mt-2 font-bold rounded-lg bg-green-500">
+                    <span class="mt-2">&and;</span> 1,740.05
+                </button>
+            </div>
+            <div class="flex gap-5">
+                <img class="h-16 w-24" src="https://cdn.freebiesupply.com/logos/large/2x/tesla-9-logo-svg-vector.svg"
+                    alt="" />
+                <button class="border-orange-500 pt-1 pb-1 px-5 h-12 mt-2 font-bold rounded-lg bg-orange-500">
+                    <span class="mb-2">&or;</span> 1,740.05
+                </button>
+            </div>
+        </div>
+        
+        
+        <div>
+            <div class="flex justify-between mt-7">
+                <h2 class="text-4xl ml-5 text-white">
+                    Save time. Get <span class="text-orange-500">higher return</span><br />Multiply wealth.
+                </h2>
+                <button class="border-2 border-orange-500 h-10 pl-2 pr-2 mr-10 rounded-lg text-white">
+                    Find Out More &gt;
+                </button>
+            </div>
+            <div class="flex justify-around mt-10">
+                <div class="h-[450px] w-80 border-2 p-8 pt-0 rounded-lg bg-gray-950">
+                    <img class="mt-0" src="https://superbit.biz/images/in-liquid-object-1.svg" alt="" />
+                    <h2 class="text-3xl text-center mt-5 mb-5 text-white">
+                        Various Assests
+                    </h2>
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Voluptate accusantium excepturi pariatur ducimus! Error, enim.
+                    </p>
+                </div>
+                <div class="h-[450px] w-80 border-2 p-8 rounded-lg bg-gray-950">
+                    <img class="mt-0" src="https://superbit.biz/images/in-liquid-object-2.svg" alt="" />
+                    <h2 class="text-3xl text-center mt-5 mb-5 text-white">
+                        Market Analysis
+                    </h2>
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                        dignissimos quidem maiores vitae quisquam quis!
+                    </p>
+                </div>
+                <div class="h-[450px] w-80 border-2 p-8 rounded-lg bg-gray-950">
+                    <img class="mt-0" src="https://superbit.biz/images/in-liquid-object-3.svg" alt="" />
+                    <h2 class="text-3xl text-center mt-5 mb-5 text-white">
+                        Enhanced tools
+                    </h2>
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                        culpa, sunt maxime explicabo ullam libero!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center text-5xl mt-5">Features Offered</h1>
+    <div class="grid grid-cols-2 gap-8 p-10 ml-16">
+        <div class="flex">
+            <div>
+                <img src="https://superbit.biz/images/in-liquid-icon-1.svg" alt="">
+            </div>
+            <div class="ml-8">
+                <h2 class="text-3xl mb-4 font-bold">Expert Service</h2>
+                <p class="text-gray-600 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Quas sequi, iste doloribus minus ex animi.</p>
+                <span class="text-gray-400 cursor-pointer">LEARN MORE --&gt;</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div>
+                <img src="https://superbit.biz/images/in-liquid-icon-2.svg" alt="">
+            </div>
+            <div class="ml-8">
+                <h2 class="text-3xl mb-4 font-bold">Fully Regulated</h2>
+                <p class="text-gray-600 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Quas sequi, iste doloribus minus ex animi.</p>
+                <span class="text-gray-400 cursor-pointer">LEARN MORE --&gt;</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div>
+                <img src="https://superbit.biz/images/in-liquid-icon-3.svg" alt="">
+            </div>
+            <div class="ml-8">
+                <h2 class="text-3xl mb-4 font-bold">Financial Strength</h2>
+                <p class="text-gray-600 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Quas sequi, iste doloribus minus ex animi.</p>
+                <span class="text-gray-400 cursor-pointer">LEARN MORE --&gt;</span>
+            </div>
+        </div>
+        <div class="flex">
+            <div>
+                <img src="https://superbit.biz/images/in-liquid-icon-4.svg" alt="">
+            </div>
+            <div class="ml-8">
+                <h2 class="text-3xl mb-4 font-bold">Integrated support</h2>
+                <p class="text-gray-600 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Quas sequi, iste doloribus minus ex animi.</p>
+                <span class="text-gray-400 cursor-pointer">LEARN MORE --&gt;</span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <fieldset class="border-4 border-orange-500 rounded-lg w-[90%] ml-16 animate-pulse">
+            <legend class="text-center text-3xl text-orange-500 ml-4 mr-4 font-bold">Simple Steps to start trade.</legend>
+            <div class="flex justify-evenly mt-5">
+                <div>
+                    <div class="h-16 w-16 border-2 border-orange-600 rounded-full flex items-center justify-center ml-10">1</div>
+                    <h3 class="mt-2 text-2xl mr-9">Register Account</h3>
+                </div>
+                <div>
+                    <div class="h-16 w-16 border-2 border-orange-600 rounded-full flex items-center justify-center ml-11">2</div>
+                    <h3 class="mt-2 text-2xl mr-9">Fund your Account</h3>
+                </div>
+                <div>
+                    <div class="h-16 w-16 border-2 border-orange-600 rounded-full flex items-center justify-center ml-7">3</div>
+                    <h3 class="mt-2 text-2xl mr-9">Start Trade</h3>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="mt-5">
+        <h1 class="text-3xl ml-8 font-bold">Stay ahead of the curve.</h1>
+        <div class="flex gap-8 justify-around mt-8">
+            <div>
+                <h1 class="text-orange-500 rotate-90 w-fit ml-0 font-bold">NEWS</h1>
+                <h2 class="border-l-2 border-orange-400 pl-5 ml-5 text-3xl">Wall Street cautious<br>on 'frothy' stocks,<br>warn bitcoin bubble</h2>
+                <p class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 pb-4 text-2xl text-gray-500">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Esse, quidem.....</p>
+                <span class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 font-bold text-2xl">Read More -&gt;</span>
+            </div>
+            <div>
+                <h1 class="text-orange-500 rotate-90 w-fit ml-0 font-bold">NEWS</h1>
+                <h2 class="border-l-2 border-orange-400 pl-5 ml-5 text-3xl">Will AUD/USD Hit<br>0.8000 In The<br>Foreseeable Future?</h2>
+                <p class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 pb-4 text-2xl text-gray-500">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Esse, quidem.</p>
+                <span class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 font-bold text-2xl">Read More -&gt;</span>
+            </div>
+            <div>
+                <h1 class="text-orange-500 rotate-90 w-fit ml-0 font-bold">NEWS</h1>
+                <h2 class="border-l-2 border-orange-400 pl-5 ml-5 text-3xl">how Can you use<br>Volatility to Your<br>Advantage</h2>
+                <p class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 pb-4 text-2xl text-gray-500">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Esse, quidem.</p>
+                <span class="border-l-2 border-orange-400 pl-5 ml-5 pt-4 font-bold text-2xl">Read More -&gt;</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex justify-between mt-5 bg-black">
+        <div class="flex">
+            <img class="h-16 w-16 rounded-full mt-4 ml-5" src="/assests/logo.jpg" alt="" />
+            <span class="text-2xl text-white text-center mt-6 ml-3">LIQUID</span>
+        </div>
+        <div class="flex gap-7 p-2">
+            <div class="m-5">
+                <h2 class="text-2xl font-bold text-white">Markets</h2>
+                <p class="text-gray-400 m-3">
+                    Web Platform
+                </p>
+                <p class="text-gray-400 m-3">
+                    Trading Apps
+                </p>
+                <p class="text-gray-400 m-3">Meta Trader 5</p>
+                <p class="text-gray-400 m-3">Compare Features</p>
+            </div>
+            <div class="m-5">
+                <h2 class="text-2xl font-bold text-white">Account Types</h2>
+                <p class="text-gray-400 m-3">
+                    Demo Account
+                </p>
+                <p class="text-gray-400 m-3">
+                    Standard Account
+                </p>
+                <p class="text-gray-400 m-3">ECN Account</p>
+                <p class="text-gray-400 m-3">Islamic Account</p>
+            </div>
+            <div class="m-5">
+                <h2 class="text-2xl font-bold text-white">Learn To Trade</h2>
+                <p class="text-gray-400 m-3">
+                    News and Trade Ideas
+                </p>
+                <p class="text-gray-400 m-3">
+                    Trading strategy
+                </p>
+                <p class="text-gray-400 m-3">Forex Trading Course</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
