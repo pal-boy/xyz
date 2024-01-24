@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle</title>
+</head>
+<body>
+    <h1 id="imageState">Your Image is Hidden</h1>
+    <button id="btn" style="display: block; margin-bottom: 15px; cursor: pointer;">Toggle image</button>
+    <img src="passportphoto.jpeg" alt="Your image is hidden" id="imageDisplay" height="300" width="300" style="display: none;">
+
+    <script>
+        let imageState = document.getElementById('imageState');
+        let btn = document.getElementById('btn');
+        let imageDisplay = document.getElementById('imageDisplay');
+        btn.addEventListener('click',()=>{
+            if(imageDisplay.style.display == 'none'){
+                imageState.textContent = 'Your Image is Visible';
+                imageDisplay.style.display = 'block';
+            }
+            else{
+                imageState.textContent = 'Your Image is Hidden';
+                imageDisplay.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+</html>

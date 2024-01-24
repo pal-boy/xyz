@@ -170,6 +170,7 @@ nav button{
 @media screen and (max-width:415px){
     .hero-section{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .heading h1{
         font-size: 2rem;
@@ -256,6 +257,7 @@ footer img{
 @media screen and (max-width:415px){
     footer{
         flex-direction: column;
+        flex-wrap: wrap;
         margin-top: 8rem;
     }
     footer img{

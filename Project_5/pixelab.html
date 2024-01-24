@@ -1,0 +1,258 @@
+<!-- npx tailwindcss -i ./src/input.css -o ./Project_5/pixelab.css --watch -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pixelab.com</title>
+</head>
+<body class="bg-slate-50">
+    <header>
+        <!-- Navbar -->
+        <nav class="flex justify-around gap-5 font-sans pt-5">
+            <div class="m-5">
+                <img src="Logo (3).png" alt="">
+            </div>
+            <div class="flex items-center">
+                <a href="#" class="m-5 p-2 hover:font-bold text-[20px]">Home</a>
+                <a href="#" class="m-5 p-2 hover:font-bold text-[20px]">About Us</a>
+                <a href="#" class="m-5 p-2 hover:font-bold text-[20px]">Our App</a>
+                <a href="#" class="m-5 p-2 hover:font-bold text-[20px]">Contacts</a>
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="text-[20px] p-[10px] hover:bg-orange-500 hover:text-white hover:rounded-xl">Log in</button>
+                <button class="p-[10px] text-[20px] bg-orange-500 text-white rounded-xl">Sign Up</button>
+            </div>
+        </nav>
+
+        <!-- Main hero Content -->
+        <div class="flex justify-around p-3">
+
+            <!-- Left box -->
+            <div class="mt-10">
+               <h1 class="text-7xl font-sans font-bold m-5">
+                    We boost<br>growth for your<br>startup buiseness
+                </h1>
+               <p class="text-2xl font-sans ml-5 mt-16">
+                    Our goal is top at the heart of creativity services industry<br>as a digital creator. In has a after comment.
+               </p> 
+               <div class="ml-5 mt-16 mr-8">
+                    <button class="p-[10px] text-[20px] bg-orange-500 text-white rounded-xl">Get Started</button>
+                    <i class="fa-solid fa-circle-play text-4xl border-l-[6px] border-orange-500 rounded-3xl ml-5 p-2 cursor-pointer"></i><span class="text-4xl curs">Learn More</span>
+               </div>
+            </div>
+
+            <!-- Right box -->
+            <div>
+                <img src="joyful-guy-texting-message-smartphone2 1.png" alt="" class="z-0">
+                <img src="Group 10.png" alt="" class="absolute top-[13rem] right-[8rem] z-10">
+
+                <div class="rounded-2xl h-fit w-fit p-3 font-sans font-bold shadow-2xl absolute top-[38rem] right-[40rem]">
+                    <h3>1000,000 Happy Clients</h3>
+                    <p>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <span>4.9</span>
+                        <span class="text-slate-500">(15k reviews)</span>
+                    </p>
+                </div>
+
+                <div class="rounded-2xl h-fit w-fit p-3 font-sans font-bold shadow-2xl absolute top-[13rem] right-[30rem] flex gap-5">
+                    <div>
+                        <i class="fa-solid fa-chart-line text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3>100% Business Growth</h3>
+                        <p>
+                            <i class="fa-solid fa-star text-yellow-500"></i>
+                            <span>4.9</span>
+                            <span class="text-slate-500">(1520 reviews)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Service section code -->
+    <div class="p-3">
+        <span class=" block text-center text-[1rem] font-mono">S E R V I C E</span>
+        <h1 class="text-center text-5xl font-bold mb-16">Our Vision & Our Goal</h1>
+        <div class="flex justify-evenly">
+
+            <!-- Graphic Design Card -->
+            <div class="border-l-2 border-r-2 border-b-2 rounded-2xl h-[27rem] w-[22rem] text-center shadow-2xl">
+                <i class="fa-solid fa-object-group text-6xl text-center mt-5 mb-3"></i>
+                <h2 class="text-4xl font-bold mt-3 mb-6">Graphic Design</h2>
+                <p class="m-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam consequuntur illum nostrum rem, dignissimos dolorem neque voluptates sed odit cumque fuga, magni velit. Quaerat!</p>
+                <button class="p-[10px] pl-[14px] pr-[14px] text-[20px] bg-orange-500 text-white rounded-xl">Learn More</button>
+            </div>
+
+            <!-- Video Editing card -->
+            <div class="border-l-2 border-r-2 border-b-2 rounded-2xl h-[27rem] w-[22rem] text-center shadow-2xl">
+                <i class="fa-solid fa-video text-6xl text-center mt-5 mb-3"></i>
+                <h2 class="text-4xl font-bold mt-3 mb-6">Video Editing</h2>
+                <p class="m-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam consequuntur illum nostrum rem, dignissimos dolorem neque voluptates sed odit cumque fuga, magni velit. Quaerat!</p>
+                <button class="p-[10px] pl-[14px] pr-[14px] text-[20px] bg-orange-500 text-white rounded-xl">Learn More</button>
+            </div>
+
+            <!-- Digital Marketing card -->
+            <div class="border-l-2 border-r-2 border-b-2 rounded-2xl h-[27rem] w-[22rem] text-center shadow-2xl">
+                <i class="fa-solid fa-square-poll-vertical text-6xl text-center mt-5 mb-3"></i>
+                <h2 class="text-4xl font-bold mt-3 mb-6">Digital Marketing</h2>
+                <p class="m-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam consequuntur illum nostrum rem, dignissimos dolorem neque voluptates sed odit cumque fuga, magni velit. Quaerat!</p>
+                <button class="p-[10px] pl-[14px] pr-[14px] text-[20px] bg-orange-500 text-white rounded-xl">Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-around items-center mt-20 h-[70vh]">
+        <div>
+            <h3 class="text-4xl text-purple-500 font-sans mb-10">Many Blocks and <br>Components</h3>
+            <p class="text-2xl text-slate-400 mt-10 font-sans">Startup framework contains components<br>and complex blocks which can easily be<br>integrated into almost any design.</p>
+            <button class="mt-10 pl-8 pr-8 pt-3 pb-3 border-4 rounded-l-full rounded-r-full font-bold">Explore</button>
+        </div>
+        <div>
+            <img src="Video Player.png" alt="">
+        </div>
+    </div>
+
+    <!-- Testimonials section code -->
+    <div class="p-3">
+        <span class=" block text-center text-[1rem] font-mono text-slate-400 mt-20">T E S T I M O N I A L S</span>
+        <h1 class="text-center text-5xl font-bold mb-20">What Clients say about us</h1>
+        <div class="grid grid-cols-2 gap-5 justify-items-center mt-5">
+            <div class="h-[18rem] w-[26rem] flex gap-8 p-3">
+                <div>
+                    <img src="Mask.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold font-sans mb-10">Get a full retina ready site when<br>you build with Startup Framework.<br>Websites look sharper and more<br>gorgeous on devices with retina<br>display support.</p>
+                    <span class=" text-[1rem] font-mono text-slate-500 mt-10">RAYHAN CURRAN</span>
+                </div>
+            </div>
+
+            <div class="h-[18rem] w-[26rem] flex gap-8 p-3">
+                <div>
+                    <img src="Mask (1).png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold font-sans mb-12">As a business targeting high net<br>worth individuals, we were looking<br>for a slick, cool and mini-malistic<br>design for our website.</p>
+                    <span class=" text-[1rem] font-mono text-slate-500 mt-12">KAYLEY FRAME</span>
+                </div>
+            </div>
+
+            <div class="h-[18rem] w-[26rem] flex gap-8 p-3">
+                <div>
+                    <img src="Mask (2).png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold font-sans mb-16">The most important part of the<br>Startup Framework is the samples.</p>
+                    <span class=" text-[1rem] font-mono text-slate-500 mt-16">GENE WHITFIELD</span>
+                </div>
+            </div>
+
+            <div class="h-[18rem] w-[26rem] flex gap-8 p-3">
+                <div>
+                    <img src="Userpic.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold font-sans mb-16">I've built my website with Startup<br>just in one day, and it was ready-to-<br>go</p>
+                    <span class=" text-[1rem] font-mono text-slate-500">ALLAN KIM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Team Section code -->
+    <div class="p-3">
+        <span class=" block text-center text-[1rem] font-mono text-slate-400 mt-20">O U R &nbsp; T E A M</span>
+        <h1 class="text-center text-5xl font-bold mb-20">Meet The Team</h1>
+        <div class="p-4 flex justify-around">
+            <div class="border-2 h-[23rem] w-[25.5rem] rounded-2xl">
+                <img src="Mask (3).png" alt="" class="block m-auto p-2 mt-3">
+                <h2 class="text-center text-purple-500 text-2xl font-sans mt-5">Vanessa Laird</h2>
+                <span class=" block text-center text-[1rem] font-sans text-slate-400 mt-10">UI DESIGNER</span>
+                <div class="border-t-2 mt-10 h-[4rem] w-[25.5rem] flex">
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-twitter text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-facebook text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-dribbble text-2xl text-slate-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-2 h-[23rem] w-[25.5rem] rounded-2xl">
+                <img src="Userpic (1).png" alt="" class="block m-auto p-2 mt-3">
+                <h2 class="text-center text-purple-500 text-2xl font-sans mt-5">Mason campbell</h2>
+                <span class=" block text-center text-[1rem] font-sans text-slate-400 mt-10">UI DESIGNER</span>
+                <div class="border-t-2 mt-10 h-[4rem] w-[25.5rem] flex">
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-twitter text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-facebook text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-dribbble text-2xl text-slate-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-2 h-[23rem] w-[25.5rem] rounded-2xl">
+                <img src="Userpic (2).png" alt="" class="block m-auto p-2 mt-3">
+                <h2 class="text-center text-purple-500 text-2xl font-sans mt-5">Irea Evans</h2>
+                <span class=" block text-center text-[1rem] font-sans text-slate-400 mt-10">CLIENT MANAGER</span>
+                <div class="border-t-2 mt-10 h-[4rem] w-[25.5rem] flex">
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-twitter text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="border-r-2 h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-facebook text-2xl text-slate-400"></i>
+                    </div>
+                    <div class="h-[3.9rem] w-[8.5rem] flex justify-center items-center">
+                        <i class="fa-brands fa-dribbble text-2xl text-slate-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter section code -->
+    <div>
+        <h1 class="text-center text-5xl font-bold mb-20 mt-10">Subscribe Our Newsletter</h1>
+        <div class="flex justify-around">
+            <div>
+                <img src="Frame.png" alt="">
+            </div>
+            <div>
+                <p class="font-sans text-[1rem] mt-5 mb-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere asperiores eum <br>accusantium consectetur saepe vel necessitatibus, atque voluptates animi hic pariatur.<br> Magnam, qui quod.
+                </p>
+                <input type="email" placeholder="Your E-mail here..." class="pl-8 pr-8 pt-5 pb-5 w-[90%] font-bold rounded-full placeholder-black shadow-2xl"><br>
+                <button class="w-[90%] pl-8 pr-8 pt-3 pb-3 bg-orange-500 text-white mt-10 mb-5 rounded-2xl">Subscribe our Newsletter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section code -->
+    <div class="flex justify-around mt-20 p-3">
+        <div><img src="Logo (3).png" alt="" class="h-[2rem] w-[6rem]"></div>
+        <div>
+            <p class="text-purple-500">&copy; 2023 Epixelab. All Rights Reserved.</p>
+        </div>
+        <div>
+            <span class="ml-2 mr-3 text-purple-500 font-sans">Portfolio</span><span class="ml-2 mr-3 text-purple-500 font-sans">How it works</span><span class="ml-2 mr-3 text-purple-500 font-sans">Pricing</span><span class="ml-2 mr-3 text-purple-500 font-sans">About</span><span class="ml-2 mr-3 text-purple-500 font-sans">Login</span>
+        </div>
+    </div>
+    
+    <hr class="w-[90%] mt-6 ml-10 border-2">
+    <p class="mt-4 font-sans text-slate-400 p-3 ml-10">Startup framework contains components and complex blocks which can easily be integrated into almost any design</p>
+</body>
+</html>

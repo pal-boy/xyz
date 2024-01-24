@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication status</title>
+</head>
+<body>
+    <button id="loginBtn">Login</button>
+    <button id="logoutBtn">Logout</button>
+    <h2 id="loginStatus"></h2>
+    <script>
+        let loginBtn = document.getElementById('loginBtn');
+        let logoutBtn = document.getElementById('logoutBtn');
+        let loginStatusText = document.getElementById('loginStatus');
+        loginBtn.addEventListener('click',()=>{
+            localStorage.setItem('auth',true);
+            window.location.reload();
+            
+        })
+        logoutBtn.addEventListener('click',()=>{
+            localStorage.setItem('auth',false);
+            window.location.reload();
+            
+        })
+        let login_status = localStorage.getItem('auth');
+        console.log(login_status == 'true');
+        if(login_status == 'true'){
+            loginStatusText.innerText = 'User is Logged In';
+        }
+        else{
+            loginStatusText.innerText = 'User has not Logged In';
+        }
+    </script>
+</body>
+</html>

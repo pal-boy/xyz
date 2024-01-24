@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+    <style>
+        #btn{
+            cursor: pointer;
+            padding: 12px 24px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">This is Light Mode</h1>
+    <button id="btn">Toggle Theme</button>
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click' ,()=>{
+            if(document.body.style.backgroundColor != 'black'){
+                document.body.style.backgroundColor = 'black';
+                text.innerHTML = 'This is Dark Mode';
+                text.style.color = 'white';
+            }
+            else{
+                document.body.style.backgroundColor = 'white';
+                text.innerHTML = 'This is Light Mode';
+                text.style.color = 'black';
+            }
+        })
+    </script>
+</body>
+</html>

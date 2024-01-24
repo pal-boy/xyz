@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .digitalClock{
+            border: 5px solid #fff;
+            border-radius: 10px;
+            padding: 12px 22px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="digitalClock">
+        
+    </div>
+    <script>
+        let digitalClock = document.querySelector('.digitalClock');
+        
+        setInterval(function(){
+            let time = new Date();
+            let hr = time.getHours().toString().padStart(2,'0');
+            let min = time.getMinutes().toString().padStart(2,'0');
+            let sec = time.getSeconds().toString().padStart(2,'0');
+            
+            let digitalTime = [hr,min,sec];
+            let hexColor = '#'+digitalTime.join('');
+
+            document.body.style.backgroundColor = hexColor;
+            digitalClock.innerHTML = digitalTime.join(':');
+        },1000);
+    </script>
+</body>
+</html>
